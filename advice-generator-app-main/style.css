@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+:root{
+    --Light-Cyan: hsl(193, 38%, 86%);
+    --Neon-Green: hsl(150, 100%, 66%);
+    --Grayish-Blue: hsl(217, 19%, 38%);
+    --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+    --Dark-Blue: hsl(218, 23%, 16%);
+}
+
+body{
+    background-color: var(--Dark-Blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    font-family: 'Manrope',sans-serif;
+}
+
+.container{
+    background-color: var(--Dark-Grayish-Blue);
+    height: max-content;
+    width: 400px;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.container h5{
+    font-size: 13px;
+    color: var(--Neon-Green); 
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+.container p{
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--Light-Cyan);
+    margin-top: 20px 0;
+}
+
+.divide{
+    width: 100%;
+    margin: 20px 0;
+}
+
+button{
+    position: absolute;
+    background-color: var(--Neon-Green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 47px;
+    width: 50px;
+    height: 50px;
+    left: 45%;
+    bottom: -25px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+button img{
+    width: 50%;
+}
+
+button:hover{
+    box-shadow: 2px -3px 20px -2px rgba(82, 255,168, 1);
+}
