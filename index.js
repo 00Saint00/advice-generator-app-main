@@ -8,8 +8,7 @@ let generateAdvice = async () => {
   try {
     const response = await fetch(baseUrl);
     let data = await response.json();
-    console.log(data);
-    adviceId.innerText = `#${data.slip.id}`;
+    adviceId.innerText = `${data.slip.id}`;
     adviceText.innerText = `"${data.slip.advice}"`;
   } catch (error) {
     console.log(error);
